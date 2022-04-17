@@ -8,4 +8,8 @@ jobs:
       - uses: actions/checkout@v3
       - uses: ./
         with:
-          args: test_data/Adv-C-Programming/pa07-cramerg
+          args: |
+            -v --tool=memcheck --leak-check=full --show-reachable=yes 
+            test_data/student-sort/pa05 
+            test_data/student-sort/inputs/testinput3 
+            id3 first3 last3
