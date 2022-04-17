@@ -1,7 +1,5 @@
-FROM debian:9.5-slim
+FROM janitortechnology/ubuntu-dev:latest
 
 COPY entrypoint.sh /entrypoint.sh
-
-RUN apt-get -y update && apt-get install valgrind
 
 ENTRYPOINT ["/entrypoint.sh"]
