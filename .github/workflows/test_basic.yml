@@ -1,0 +1,11 @@
+name: Basic Test
+on: [push]
+
+jobs:
+  test_basic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./
+        with:
+          args: test_data/Adv-C-Programming/pa07-cramerg
