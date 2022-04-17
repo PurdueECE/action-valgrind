@@ -1,0 +1,10 @@
+name: "action-valgrind"
+description: "Action to run valgrind on a repository."
+author: "Purdue ECE"
+inputs:
+  args:
+    description: "Arguments to use"
+    default: ''
+runs:
+  using: "docker"
+  image: "Dockerfile"
