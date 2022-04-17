@@ -1,4 +1,4 @@
-FROM janitortechnology/ubuntu-dev:latest
+FROM karek/valgrind:latest
 
 COPY entrypoint.sh /entrypoint.sh
 
