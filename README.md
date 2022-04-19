@@ -6,7 +6,7 @@
 - uses: actions/checkout@v3
 # Compile binaries
 - run: make clean all
-- uses: PurdueECE/action-valgrind@v1
+- uses: PurdueECE/action-valgrind@v1.1
   with:
     # Arguments to use
     args: -v --tool=memcheck --leak-check=full --show-reachable=yes ./out
