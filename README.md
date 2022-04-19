@@ -1,4 +1,5 @@
 # Valgrind Action
+Run valgrind on your code.
 
 # Usage
 ```yaml
@@ -6,11 +7,9 @@
 - uses: actions/checkout@v3
 # Compile binaries
 - run: make clean all
+# Run valgrind
 - uses: PurdueECE/action-valgrind@v1.1
   with:
     # Arguments to use
     args: -v --tool=memcheck --leak-check=full --show-reachable=yes ./out
 ```
-
-# Testing
-Unit tests are in the `test-unit/` directory. They can be run with `pytest`.
