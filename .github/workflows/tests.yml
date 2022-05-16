@@ -17,3 +17,9 @@ jobs:
       - uses: ./
         with:
           args: -v --tool=mmcheck --leak-check=full --show-reachable=yes
+  test_basic_noargs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: make -C test_data/student-sort clean all
+      - uses: ./
