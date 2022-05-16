@@ -4,6 +4,7 @@ author: "Purdue ECE"
 inputs:
   args:
     description: "Arguments to use"
+    required: true
 runs:
   using: "docker"
   image: "Dockerfile"
