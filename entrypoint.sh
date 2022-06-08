@@ -1,2 +1,2 @@
 #!/bin/sh
-valgrind $INPUT_ARGS
+valgrind $INPUT_ARGUMENTS

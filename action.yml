@@ -2,7 +2,7 @@ name: "action-valgrind"
 description: "Action to run valgrind on a repository."
 author: "Purdue ECE"
 inputs:
-  args:
+  arguments:
     description: "Arguments to use"
     required: true
 runs:
